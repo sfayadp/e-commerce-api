@@ -1,6 +1,8 @@
 using e_commerce_api.Application.Contracts;
+using e_commerce_api.Application.Descuentos;
 using e_commerce_api.Application.Estados;
 using e_commerce_api.Domain.Contracts;
+using e_commerce_api.Domain.Descuentos;
 using e_commerce_api.Domain.Estados;
 using e_commerce_api.Models;
 
@@ -31,6 +33,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ecommerceContext>();
 builder.Services.AddScoped<IEstadosApplicationService, EstadosApplicationService>();
 builder.Services.AddScoped<IEstadosDomainService, EstadosDomainService>();
+builder.Services.AddScoped<IDescuentosApplicationService, DescuentosApplicationService>();
+builder.Services.AddScoped<IDescuentosDomainService, DescuentosDomainService>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 #endregion Dependency Injection
