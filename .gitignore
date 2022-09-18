@@ -352,6 +352,7 @@ MigrationBackup/
 
 
 #Custom
-.e-commerce-api/.vs/*
-.e-commerce-api/bin/*
-.e-commerce-api/obj/*
+.e-commerce-api/.vs/
+.e-commerce-api/[Bb]in/
+.e-commerce-api/[Oo]bj/
+
